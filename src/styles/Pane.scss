@@ -1,0 +1,91 @@
+.pane {
+  background: white;
+  height: 80vh;
+
+  // min-height: 80vh;
+  // max-height: 100vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  //   z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
+.dash {
+  border-radius: 2rem 0 0 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  //   margin: auto;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  // div {
+  //   display: flex;
+  //   flex-direction: column;
+  //   flex-shrink: 0;
+  // }
+  .profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    img {
+      max-width: 5em;
+      max-height: 5em;
+      border-radius: 50%/50%;
+    }
+  }
+  .links {
+    .link {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      margin: 3em 0px;
+      .faIcon {
+        margin: 0px 1rem;
+      }
+    }
+  }
+}
+
+.jobs {
+  overflow: scroll;
+  flex: 3;
+  margin: 0 auto;
+  .job {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin: 2em;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    justify-content: space-evenly;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    );
+    .dates {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 5px;
+      font-style: italic;
+    }
+  }
+}
+
+.selected {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+}
