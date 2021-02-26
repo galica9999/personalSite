@@ -1,10 +1,11 @@
 import React from 'react';
+import { BrowserRouter as Router, Link, NavLink } from 'react-router-dom';
+import {motion} from 'framer-motion'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-
-import { BrowserRouter as Router, Link, NavLink } from 'react-router-dom';
 
 const Dash = () => {
   return (

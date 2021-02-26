@@ -58,11 +58,14 @@
   }
 }
 
-.jobs {
-  overflow: scroll;
+.paneContainer {
+  overflow-y: overlay;
   flex: 3;
-  margin: 0 auto;
-  .job {
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .paneCard {
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
@@ -82,10 +85,13 @@
       padding: 5px;
       font-style: italic;
     }
+    section {
+      padding: 2%;
+    }
   }
 }
 
-.selected {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 1rem;
-}
+// .selected {
+//   background: rgba(255, 255, 255, 0.2);
+//   padding: 1rem;
+// }
