@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import Jobs from '../components/Jobs';
 import { pageAnimation } from '../animation';
+import { positions } from '../data';
 
 const Employment = () => {
   return (
@@ -13,7 +14,7 @@ const Employment = () => {
       className="paneContainer"
     >
       <h1>Positions</h1>
-      <Jobs />
+      <Jobs positions={positions} />
     </motion.div>
   );
 };

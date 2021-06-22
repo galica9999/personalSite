@@ -1,19 +1,20 @@
 import React from 'react';
-import { pageAnimation } from '../animation';
+import { portfolioList } from '../animation';
 import { motion } from 'framer-motion';
-import Jobs from '../components/Jobs';
+import Projects from '../components/Projects';
+import { portfolio } from '../data';
 
 const Portfolio = () => {
   return (
     <motion.div
-      variants={pageAnimation}
+      variants={portfolioList}
       exit="exit"
       initial="hidden"
-      animate="show"
+      animate="visible"
       className="paneContainer"
     >
       <h1>Portfolio</h1>
-      <Jobs />
+      <Projects portfolio={portfolio} />
     </motion.div>
   );
 };

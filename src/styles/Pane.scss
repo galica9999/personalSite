@@ -40,9 +40,11 @@
     align-items: center;
     flex-direction: column;
     img {
-      max-width: 5em;
-      max-height: 5em;
-      border-radius: 50%/50%;
+      max-width: 40%;
+      max-height: 80%;
+      border-radius: 20%;
+      box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+      margin: auto;
     }
   }
   .links {
@@ -64,12 +66,12 @@
   h1 {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
   }
   .paneCard {
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
-    margin: 2em;
+    margin: 2rem;
     padding: 2rem 1rem;
     border-radius: 2rem;
     justify-content: space-evenly;
@@ -84,6 +86,24 @@
       flex-direction: row;
       padding: 5px;
       font-style: italic;
+    }
+    .projectTools {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      li {
+        list-style-type: none;
+      }
+      li::after {
+        content: ',  ';
+      }
+      li:last-child::after {
+        content: '';
+      }
+    }
+    .readMore {
+      text-align: right;
     }
     section {
       padding: 2%;
